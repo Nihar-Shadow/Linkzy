@@ -14,6 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
+      ad_clicks: {
+        Row: {
+          ad_id: string | null
+          id: string
+          ts: string
+        }
+        Insert: {
+          ad_id?: string | null
+          id?: string
+          ts?: string
+        }
+        Update: {
+          ad_id?: string | null
+          id?: string
+          ts?: string
+        }
+        Relationships: []
+      }
+      ad_pages: {
+        Row: {
+          config: Json
+          id: number
+        }
+        Insert: {
+          config: Json
+          id: number
+        }
+        Update: {
+          config?: Json
+          id?: number
+        }
+        Relationships: []
+      }
+      ad_visits: {
+        Row: {
+          id: string
+          page: number | null
+          ts: string
+        }
+        Insert: {
+          id?: string
+          page?: number | null
+          ts?: string
+        }
+        Update: {
+          id?: string
+          page?: number | null
+          ts?: string
+        }
+        Relationships: []
+      }
       analytics: {
         Row: {
           clicks: number
@@ -159,6 +210,18 @@ export type Database = {
           _user_id: string
         }
         Returns: boolean
+      }
+      increment_link_clicks: {
+        Args: {
+          p_code: string
+        }
+        Returns: undefined
+      }
+      resolve_short_code: {
+        Args: {
+          p_code: string
+        }
+        Returns: string
       }
     }
     Enums: {
