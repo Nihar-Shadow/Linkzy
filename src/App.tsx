@@ -8,6 +8,8 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
+import ShortLinkRedirect from "@/pages/ShortLinkRedirect";
+import AdPage from "@/pages/AdPage";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +24,9 @@ const App = () => (
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin" element={<Admin />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/s/:shortCode" element={<ShortLinkRedirect />} />
+          <Route path="/ad/:pageId" element={<AdPage />} />
+          {/* CATCH-ALL ROUTE MUST BE LAST */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
