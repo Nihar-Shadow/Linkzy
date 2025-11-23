@@ -1,7 +1,7 @@
 # Linkzy — URL Shortener + Ad Monetization
 
 ## Live Link
-- Add your production URL here: `https://...............................`
+- Add your production URL here: `[https://...............................](https://linkzyy.netlify.app/)`
 
 ## Overview
 - Linkzy turns long URLs into short, shareable links and monetizes traffic through an ad funnel. Users create links, drive clicks, and track impressions, clicks, and earnings with real-time analytics.
