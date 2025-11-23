@@ -91,9 +91,6 @@ VITE_SUPABASE_PUBLISHABLE_KEY=YOUR_ANON_KEY
 - Ensure Supabase policies are applied and RPC functions are present.
 - Confirm `ad-images` bucket exists and public asset URLs resolve.
 
-## Current Demo
-- Previous demo URL: `https://linkzy-ad-boost.lovable.app/` (replace or update as needed).
-
 ## License
 - Proprietary or add your license details here.
 
